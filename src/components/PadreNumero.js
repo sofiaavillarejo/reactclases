@@ -12,7 +12,7 @@ class PadreNumero extends Component{
         this.setState({
             listaNumeros: this.state.listaNumeros.concat(numero)
 
-            //!otra forma de hacerlo
+            //todo:otra forma de hacerlo
             // listaNumeros: [...this.state.listaNumeros, numero]
 
         });
@@ -29,7 +29,7 @@ class PadreNumero extends Component{
     render(){
         return(
             <div>
-                <h1 style={{color:"red"}}>Padre Numero</h1>
+                <h1 style={{color:"red"}}>Padre Numeros</h1>
                 <button onClick={this.generarNumero}>Nuevo Número</button>
                 <h1 style={{color:"red"}}>La suma es: {this.state.sumaTotal}</h1>
                 {
